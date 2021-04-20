@@ -1,0 +1,112 @@
+.App{
+    height:100%;
+    // COMMON
+    .inner{
+        position: relative;
+        width: 1000px;
+        margin: 100px auto;
+    }    
+    .header{
+        font-size: 3rem;
+        text-decoration: underline;
+        margin:0;
+        margin-bottom: 1rem;
+    }
+    // SECTION1
+    .sec1{
+        background-color:rgb(254, 211, 80);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        inset: 0px;
+        img.section1__logo{
+            width: 250px;
+            margin-bottom: 30px;
+            animation-timing-function: ease-in;
+            animation-duration: 0.8s;
+        }
+        h1{
+            font-size: 4rem;
+            margin: 0px;
+            color:#333;
+            animation-name: FadeIn;
+            animation-timing-function: ease-in;
+            animation-duration: 1.5s;
+        }
+        h3{
+            font-size: 2rem;
+            margin-top: 10px;
+            color:#444;
+            animation-timing-function: ease-in;
+            animation-duration: 1.5s;
+
+        }
+    }
+    .sec2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100vh;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        box-shadow: #444 0px 0px 10px;
+        .inner{
+            display: flex;
+        }
+        .inner__left{
+            width:200px;
+            text-align: right;
+            margin-right:2rem;
+            img{
+                width:200px;
+                border: 2px solid #333;
+                border-radius: 10%;
+
+            }
+        }
+        .inner__right{
+            .name{
+                margin-top: 5rem;
+                color:#555;
+                .name__han{
+                    color:#222;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-right: .4rem;
+                }
+            }
+            .job{
+                
+                color:#111;
+            }
+            .infos{
+                margin-bottom: 2.4rem;
+                .info{
+                    display: flex;
+                    margin-top: .5rem;
+                    svg{
+                        font-size: 24px;
+                        margin-right: 5px;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    font-weight: 500;
+                    &:visited{
+                        color:blue;
+                    }
+                }
+                .intro{                  
+                }
+
+            }
+        }
+    }
+
+}
