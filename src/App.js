@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import logo from './image/logo.svg';
 import profile from './image/Profile.jpg';
 import react from './image/react.png';
@@ -9,11 +10,24 @@ import vue from './image/vue.png';
 import redux from './image/redux.png';
 import typescript from './image/typescript.jpeg';
 import scss from './image/scss.png';
+import starbucks from './image/starbucks.JPG';
 import './App.scss';
 
-import {VscMail,VscCallIncoming, VscGithubAlt,VscWindow } from "react-icons/vsc";
+import {VscMail,VscCallIncoming, VscGithubAlt,VscWindow, VscArrowUp, VscGithubInverted, VscGlobe } from "react-icons/vsc";
 
 function App() {
+  const [toTop, setToTop] = useState(false);
+  function toTopHandler(){
+      window.scrollTo(0,0);
+  }
+  function scrollHandler(e){
+    if(window.pageYOffset>500){
+      setToTop(true);
+    }else{
+      setToTop(false);
+    }
+  }
+  window.addEventListener('scroll',scrollHandler);
   return (
     <div className="App">
       <div className="sec1">
@@ -118,11 +132,35 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="inner">
-          
+        <div className="inner portfolio">
+          <h2 className="header">Portfolio</h2>
+          <ul className="portList">
+            <li className="starbucks">
+              <p>2021.04 ~ 2021.04</p>
+              <h3>Starbucks</h3>
+              <div className="link">
+                <VscGithubInverted/>
+                <a href="https://github.com/qkrdkwl9090/starbucks">Github Link</a>
+              </div> 
+              <div className="link">
+                <VscGlobe/>
+                <a href="http://dodong.blog:8082/">Demo Link</a>
+              </div>
+              <img className="pageView" src={starbucks} alt="starbucks"/>
+              <p>스타벅스 홈페이지 클론</p>
+              <h3 className="stack">Stack</h3>
+              <div className="stackList">
+                <p>AWS S3를 사용한 호스팅</p>
+                <p>Gsap, Lodash, Swiper, ScrollMagic 라이브러리 사용 </p>
+              </div>
+            </li>
+          </ul>
+
         </div>
       </div>
-
+      <div className={toTop? 'toTop': 'toTop_false'} onClick={toTopHandler}>
+        <VscArrowUp/>
+      </div>
     </div>
   );
 }
