@@ -11,6 +11,7 @@ import redux from './image/redux.png';
 import typescript from './image/typescript.jpeg';
 import scss from './image/scss.png';
 import starbucks from './image/starbucks.JPG';
+import node from './image/node.png';
 import './App.scss';
 
 import {VscMail,VscCallIncoming, VscGithubAlt,VscWindow, VscArrowUp, VscGithubInverted, VscGlobe } from "react-icons/vsc";
@@ -81,6 +82,10 @@ function App() {
               <li>
                 <img src={react} alt="react"/>
                 <p>React.js</p>
+              </li>
+              <li>
+                <img src={node} alt="nodejs"/>
+                <p>Node.js</p>
               </li>
               <li>
                 <img src={scss} alt="scss"/>
