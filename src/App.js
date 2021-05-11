@@ -11,7 +11,14 @@ import redux from './image/redux.png';
 import typescript from './image/typescript.jpeg';
 import scss from './image/scss.png';
 import starbucks from './image/starbucks.JPG';
-import node from './image/node.png';
+import node from './image/node.JPG';
+import spring from './image/spring.JPG';
+import mssql from './image/mssql.JPG';
+import java from './image/java.JPG';
+import graph from './image/graph.png';
+import styled from './image/styled.jfif';
+import next from './image/next.JPG';
+import webpack from './image/webpack.JPG';
 import './App.scss';
 
 import {VscMail,VscCallIncoming, VscGithubAlt,VscWindow, VscArrowUp, VscGithubInverted, VscGlobe } from "react-icons/vsc";
@@ -96,6 +103,14 @@ function App() {
                 <p>Flutter</p>
               </li>
               <li>
+                <img src={spring} alt="SpringBoot"/>
+                <p>SpringBoot</p>
+              </li>
+              <li>
+                <img src={mssql} alt="MSSQL"/>
+                <p>MSSQL</p>
+              </li>
+              <li>
                 <img src={awss3} alt="awss3"/>
                 <p>Aws S3</p>
               </li>
@@ -117,8 +132,20 @@ function App() {
                 <p>Typescript</p>
               </li>
               <li>
-                <img src={dart} alt="dart"/>
-                <p>Dart</p>
+                <img src={webpack} alt="webpack"/>
+                <p>Webpack</p>
+              </li>
+              <li>
+                <img src={styled} alt="styled"/>
+                <p>Styled-components</p>
+              </li>
+              <li>
+                <img src={graph} alt="graph"/>
+                <p>GraphQL</p>
+              </li>
+              <li>
+                <img src={next} alt="next"/>
+                <p>Next.js</p>
               </li>
             </ul>
             </div>
@@ -128,6 +155,10 @@ function App() {
               <li>
                 <img src={javascript} alt="javascript"/>
                 <p>Javascript</p>
+              </li>
+              <li>
+                <img src={java} alt="java"/>
+                <p>Java</p>
               </li>
               <li>
                 <img src={dart} alt="dart"/>
